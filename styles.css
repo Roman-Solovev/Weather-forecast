@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+fieldset {
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+#result {
+    min-height: 2lh;
+    text-align: center;
+}
