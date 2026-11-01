@@ -5,7 +5,14 @@ const api_base = "https://api.openweathermap.org/data/2.5/weather";
 const form = document.getElementById("weatherForm");
 const resultDiv = document.getElementById("result");
 const cityInput = form.elements.city;
+const todayEl = document.getElementById("today");
 
+function showDate () {
+    const now = new Date();
+    todayEl.textContent = "Today: " + new Intl.DateTimeFormat("en-En", {month: "long", day: "numeric"}).format(now)
+};
+
+showDate()
 
 async function urlWeather(params) {
     const url = new URL(api_base);
